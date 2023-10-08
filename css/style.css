@@ -450,6 +450,6 @@ button:focus {
     transition: color 250ms ease-in;
 }
 
-.contack__link:hover {
+.contact__link:hover {
     color: var(--color-accent);
 }
