@@ -12,3 +12,15 @@ document.addEventListener('scroll', ()=> {
         header.classList.remove('header--dark')
     }
 })
+
+//Home 섹션을 아래로 스크롤시 투명하게 처리함
+const home = document.querySelector(".home__container")
+const homeHeader = home.getBoundingClientRect().height;
+
+document.addEventListener("scroll" , ()=>{
+    console.log(1 - window.scrollY / homeHeader)
+    
+    //만약 homehewader높이가 100 y의좌표는0 opacity값은1로 불투명하게...
+    //1 -  y의값을  homeHeader 나눈값을 우리가 원하는 opacity값이나옴
+    home.style.opacity=1 - window.scrollY / homeHeader;
+})
