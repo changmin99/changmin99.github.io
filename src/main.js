@@ -36,3 +36,18 @@ document.addEventListener('scroll', ()=>{
         arrowup.style.opacity=0;
     }
 })
+
+//Navbar 토글버튼 클릭 처리
+const navbarMenu = document.querySelector(".header__menu");
+const navbarToggle = document.querySelector(".header__toggle");
+navbarToggle.addEventListener("click" , ()=>{
+    //toggle이라는 함수를 사용해서 보여줬다가 안보여주고
+    //기존의 open에 클래스가 있다면 클래스를 제거
+    navbarMenu.classList.toggle('open');
+})
+
+
+//Navbar 메뉴 클리시 메뉴를 자동으로 닫아줌
+navbarMenu.addEventListener("click" , ()=>{
+    navbarMenu.classList.remove('open');
+})
