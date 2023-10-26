@@ -1,7 +1,7 @@
-//Header에 페이지 아래로 스크롤시 다크 스타일링 적용
+ //Header에 페이지 아래로 스크롤시 다크 스타일링 적용
 const header = document.querySelector(".header");
 //getBoundingClientRect(): 요소의높이 측정
-const hederHeight = header.getBoundingClientRect().height;
+const headerHeight = header.offsetHeight;
 document.addEventListener('scroll', ()=> {
     //스크롤되는 Y 좌표가 headerHeight보다 크다면 다른 스타일링!
     // console.log(window.screenY);
@@ -15,7 +15,7 @@ document.addEventListener('scroll', ()=> {
 
 //Home 섹션을 아래로 스크롤시 투명하게 처리함
 const home = document.querySelector(".home__container")
-const homeHeader = home.getBoundingClientRect().height;
+const homeHeader = home.offsetHeight;
 
 document.addEventListener("scroll" , ()=>{
     //console.log(1 - window.scrollY / homeHeader)
@@ -50,4 +50,5 @@ navbarToggle.addEventListener("click" , ()=>{
 //Navbar 메뉴 클리시 메뉴를 자동으로 닫아줌
 navbarMenu.addEventListener("click" , ()=>{
     navbarMenu.classList.remove('open');
-})
+}) 
+
