@@ -20,6 +20,7 @@ const sectionIds = [
 
   //현제 섹션들이 보여지고있는지 아닌지..
   const visibleSections = sectionIds.map(() => false);
+
   let activeNavItem = navItems[0];
   
 
@@ -59,11 +60,21 @@ const sectionIds = [
       : findFirstIntersecting(visibleSections);
     selectNavItem(navIndex);
   }
-  
+ 
   //첫번쨰 true인 item의 인덱스를 만드는 함수
   function findFirstIntersecting(intersections) {
     const index = intersections.indexOf(true);
     return index >= 0 ? index : 0;
   }
   
+  //활성된된요소 클래스를 제거 
+  //다시 활성화된요소를 만들어서 활성화된요소를 추가
+  function selectNavItem(index) {
+    const navItem = navItems[index];
+    if (!navItem) return;
+    activeNavItem.classList.remove('active');
+    activeNavItem = navItem;
+    activeNavItem.classList.add('active');
+  }
+
  
