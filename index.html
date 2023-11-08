@@ -26,6 +26,7 @@
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js"></script>
     <script type="module" src="src/active_menu.js"></script>
+    <script type="module" src="src/type.js"></script>
 </head>
 
 <body>
@@ -56,9 +57,9 @@
         <section id="home">
            <div class="home__container">
             <img class="home__avatar" src="images/profile.png" alt="Changmin's profile">
-            <h2 class="home__title">Hello <br /> I&#39;m <strong class="home__title--strong">Dream Coder</strong> ,
-                Changmin</h2>
-            <p class="home__description">A software engineer currently residing in Gumi, South Korea</p>
+            <h2 class="home__title">안녕하세요 <br />저는 <strong class="home__title--strong">꿈을 키워나가는 개발자 한창민</strong> ,
+                </h2>
+            <p class="home__description">현재 한국 구미에 거주하는 소프트웨어 엔지니어</p>
             <a class="home__contact" href="#contact">Contact Me</a>
            </div>
         </section>
@@ -66,28 +67,25 @@
         <section id="about" class="section max-container">
             <h2 class="title">About me</h2>
             <p class="description">
-                Phyton, HTML, CSS, JS, etc.
-                I learned basic language at the academy for 8 months and
-                then took state-funded classes in a short period of 6 months
-                I completed the project by setting the layout HTML frame
-                with my team members and using open and API, and worked with my team members I will try to be a
-                responsible and developing devxeloper
+              파이썬, HTML, CSS, JavaScript,JQ , Java 등등
+              8개월 동안 학원에서 프로그래밍 기초언어를 배웠고,
+              그 후 6개월이라는 짧은 기간 동안 국비 수업을 듣고 수료하였습니다.
             </p>
             <ul class="majors">
                 <li class="major">
                     <i class="fa-brands fa-html5 major__icon"></i>
                     <p class="major__title">Front-end</p>
-                    <p>HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs</p>
+                    <p>HTML , CSS,JavaScipt,Jquery,React</p>
                 </li>
-                <li class="major">
+               <!---<li class="major">
                     <i class="fa-solid fa-mobile major__icon"></i>
                     <p class="major__title">Mobile</p>
                     <p>Android, iOS, React Navtive, Flutter, Java, Swift, Kotlin</p>
-                </li>
+                </li>  --->
                 <li class="major">
                     <i class="fa-solid fa-server major__icon"></i>
                     <p class="major__title">Back-end</p>
-                    <p>Java, JavaScript, Go, NodeJs, Rest APIs, GraphQL</p>
+                    <p>Java, Spring,Aws`</p>
                 </li>
             </ul>
             <ul class="jobs">
@@ -178,18 +176,17 @@
                         <ul>
                             <li>Visual Studio Code</li>
                             <li>eclipse</li>
-                            <li>IntelliJ</li>
+                            <!-- <li>IntelliJ</li>
                             <li>Android Studio Code</li>
                             <li>iOS development tools</li>
-                            <li>Sketch app</li>
+                            <li>Sketch app</li> -->
                         </ul>
                     </section>
                     <section class="skills__etc">
                         <h3 class="skills__title">Etc</h3>
                         <ul>
                             <li>Git</li>
-                            <li>Scrum Master</li>
-                            <li>Math</li>
+                            <li>GitHub</li>
                         </ul>
                     </section>
                 </div>
@@ -203,22 +200,22 @@
           <ul class="categories">
             <li>
               <button class="category category--selected" data-category="all">
-                All <span class="category__count">8</span>
+                All <span class="category__count">3</span>
               </button>
             </li>
             <li>
               <button class="category" data-category="front-end">
-                Front-end <span class="category__count">4</span>
+                Front-end <span class="category__count">3</span>
               </button>
             </li>
             <li>
               <button class="category" data-category="back-end">
-                Back-end <span class="category__count">2</span>
+                Back-end <span class="category__count">0</span>
               </button>
             </li>
             <li>
               <button class="category" data-category="mobile">
-                Mobile <span class="category__count">2</span>
+                Mobile <span class="category__count">0</span>
               </button>
             </li>
           </ul>
@@ -241,7 +238,16 @@
                 </div>
               </a>
             </li>
-            <li class="project" data-type="back-end">
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img src="images/projects/project3.webp" alt="유튜브클론코딩" class="project__img">
+                <div class="project__metadata">
+                    <h3 class="project__title">Project #3</h3>
+                    <p>React , React router , React query , tailwind </p>
+                </div>
+              </a>
+            </li>
+            <!-- <li class="project" data-type="Front-end">
               <a href="#" target="_blank">
                 <img src="images/projects/project3.webp" alt="유튜브클론코딩" class="project__img">
                 <div class="project__metadata">
@@ -249,8 +255,8 @@
                     <p>React , React router , React query , tailwind</p>
                 </div>
               </a>
-            </li>
-            <li class="project" data-type="mobile">
+            </li> -->
+            <!-- <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project4.webp"
@@ -314,12 +320,11 @@
                   <p>Clone Coding with HTML, CSS</p>
                 </div>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
-        <!-- Testimonia -->
-        <section id="testimonia" class="section max-container">
+      <section id="testimonia" class="section max-container">
             <h2 class="title">Testimonia</h2>
             <p class="description">See what they say about me</p>
             <ul class="testimonials">
@@ -340,7 +345,7 @@
                             numquam ipsum tempore consequuntur laboriosam et suscipit, quibusdam natus laborum facilis
                             beatae incidunt illum possimus eligendi tempora earum.
                         </p>
-                        <p><a href="#" class="testimonial__bubble__name">Anna Jin0</a> /Samsung</p>
+                        <p><a href="#" class="testimonial__bubble__name">Jisu Kim</a> /Samsung</p>
                     </div>
                 </li>
                 <li class="testimonial"><img src="images/testimonials/people3.webp" alt="people3"
